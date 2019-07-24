@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="dataApp">
+<head>
+    <title>Clock!</title>
+    <script src="angular.js"></script>
+
+    <!-- dependency module -->
+    <script src="mysecondmodule.js"></script>
+    <script src="mythirdmodule.js"></script>
+
+    <script src="bootstrap.js"></script>
+
+    <script src="parentCtrl.js"></script>
+</head>
+<body >
+
+  
+    <div ng-controller="HellosecondController as hello_sec">
+        <p>{{hello_sec.message}}</p>
+    </div>
+
+    <div ng-controller="HellothirdController as hello_third">
+        <p>{{hello_third.message}}</p>
+    </div>
+    
+    <br>
+</body>
+</html>
